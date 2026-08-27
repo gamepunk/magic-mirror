@@ -1163,3 +1163,159 @@ footer.site-footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   Next.js 站点适配：更贴近 Paste 的细节修正
+   ========================================================= */
+
+/* 区块标题 30px（text-r-heading-xl） */
+.section-head h2 {
+  font-size: var(--text-heading-xl);
+}
+
+/* 特性卡片更高（对齐 h-r-card-hero 的观感） */
+.feature-card {
+  min-height: 360px;
+}
+
+/* 分段选择器改用 button（React 版） */
+.segmented button {
+  position: relative;
+  z-index: 1;
+  padding: 9px 22px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-menu);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  cursor: pointer;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  transition: color 0.2s, background 0.2s;
+}
+
+.segmented button.on {
+  color: var(--color-ink);
+  background: var(--color-surface);
+  box-shadow: 0 1px 4px rgba(16, 16, 16, 0.12);
+}
+
+/* 内容容器（Paste 的 container-r / max-w-r-content） */
+.container-r {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.maxw-content {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 深色页脚（Paste 风格：bg-ink 白字） */
+.site-footer {
+  background: #101010;
+  color: #f5f5f7;
+  border-top: none;
+}
+
+.site-footer .footer-brand p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-footer .footer-col h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.site-footer .footer-col a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.site-footer .footer-col a:hover {
+  color: #fff;
+}
+
+.site-footer .footer-bottom {
+  color: rgba(255, 255, 255, 0.4);
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 子页面内容卡片（条款/关于等） */
+.doc-list {
+  display: grid;
+  gap: 18px;
+}
+
+.doc-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-tile);
+  padding: 26px 30px;
+}
+
+.doc-item h3 {
+  font-size: var(--text-title);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.doc-item p {
+  color: var(--color-sub);
+  margin: 0;
+}
+
+/* 博客/更新日志列表 */
+.post-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: 34px 38px;
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-float);
+  border-color: rgba(245, 165, 36, 0.4);
+}
+
+.post-card .date {
+  font-size: 13px;
+  color: var(--color-muted);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.post-card h3 {
+  font-size: var(--text-title);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.post-card p {
+  color: var(--color-sub);
+  margin: 0;
+}
+
+/* 媒体素材页色块 */
+.color-swatch {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-tile);
+  font-size: 14px;
+}
+
+.color-swatch .chip {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--color-line);
+  flex-shrink: 0;
+}

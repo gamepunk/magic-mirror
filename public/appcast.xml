@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Magic Mirror 更新</title>
+    <item>
+      <title>Magic Mirror 0.1.0</title>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.1.0.zip" sparkle:edSignature="rbkS70QXc3vHk4fOmlnHfh8BO60k0hSzMir6H10c9G8V67mze2QOIuo0iOYwk3h2ubrKNe3oJJl0iS3PH4dJAw==" length="471637" type="application/octet-stream"/>
+      <description><![CDATA[Magic Mirror 0.1.0 更新。]]></description>
+    </item>
+  </channel>
+</rss>
+<!-- sparkle-signatures:
+edSignature: Q1HLTGl3tKEtu+WEDPKTn1bcxa5HSSRSi2YJ9Y5iBDMoos7tdo4myWuWISyT9UvLyWxCC59V0G0NoO3Vt8YyDw==
+length: 819
+-->
