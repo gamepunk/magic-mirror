@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>使用指南 — Magic Mirror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="images/icon-32.png" alt="" /> Magic Mirror
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="usage.html" data-i18n="nav.extension">Chrome 扩展</a>
+        <a href="mac.html" data-i18n="nav.macos">macOS App</a>
+        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
+        <a href="#" id="langToggle" data-i18n="lang.toggle">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-head">
+      <h1 data-i18n="usage.title">使用指南</h1>
+      <p class="lead" data-i18n="usage.lead">从开始镜像到多页面管理，几分钟上手。</p>
+    </div>
+
+    <section>
+      <h2 data-i18n="usage.basic">基本使用</h2>
+      <ol class="steps">
+        <li data-i18n-html="usage.s1">点击浏览器工具栏上的 <strong>Magic Mirror 图标</strong>，打开操作面板。</li>
+        <li data-i18n-html="usage.s2">点击「<strong>开始镜像</strong>」进入选择模式（页面元素会随鼠标悬停高亮）。</li>
+        <li data-i18n-html="usage.s3">点击想要镜像的元素 —— 一个悬浮画中画窗口随即出现，实时显示该区域。</li>
+        <li data-i18n-html="usage.s4">按 <kbd>Esc</kbd>（或再次点击「开始镜像」）退出选择模式，镜像会继续运行。</li>
+        <li data-i18n-html="usage.s5">点击悬浮窗里的镜像格子（或再次点击原页面元素）可移除该镜像；关闭悬浮窗则停止一切。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 data-i18n="usage.win">悬浮窗操作</h2>
+      <ul>
+        <li data-i18n-html="usage.w1"><strong>滚轮缩放：</strong>鼠标悬停在格子上滚动滚轮，向上放大、向下缩小（0.25×–8×）。</li>
+        <li data-i18n-html="usage.w2"><strong>查看倍数：</strong>鼠标悬停时格子右上角会显示当前缩放倍数。</li>
+        <li data-i18n-html="usage.w3"><strong>移除：</strong>点击格子即可移除该镜像。</li>
+        <li data-i18n-html="usage.w4"><strong>查看来源：</strong>来自其他页面的镜像，格子左上角会标注来源域名。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="usage.multi">把多个页面的内容放进同一个悬浮窗</h2>
+      <p data-i18n="usage.multi.d">Chrome 全局只允许一个画中画窗口，但你可以让多个页面共享它：</p>
+      <ol class="steps">
+        <li data-i18n-html="usage.m1">在页面 A（比如 OKX）选择余额元素 —— 悬浮窗出现，页面 A 成为「宿主」。</li>
+        <li data-i18n-html="usage.m2">切到页面 B（比如 TradingView），点击图标 → 开始镜像 → 选择价格元素。</li>
+        <li data-i18n-html="usage.m3">页面 B 的内容自动加入页面 A 的悬浮窗，两个页面并排实时更新。</li>
+        <li data-i18n-html="usage.m4">第 3、4……任意多个页面同理，每个页面贡献一个格子。</li>
+      </ol>
+      <div class="note" data-i18n-html="usage.multi.note">
+        <strong>说明：</strong>每个页面最多贡献一个元素；来源页的位置变化会实时同步到悬浮窗；被切到后台的页面，Chrome 会降低其采集帧率，镜像更新可能没那么流畅。
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="usage.ms">多选模式</h2>
+      <p data-i18n-html="usage.ms.d">
+        默认每个页面只保留一个镜像，重新点选会替换当前镜像。想在同一页面同时镜像多个元素，请在设置页开启「<strong>多选模式</strong>」（popup → 打开设置，或 <code>chrome://extensions</code> → Magic Mirror → 详情 → 扩展选项）。开启后选择模式保持开启，可以连续点选多个元素，共享一个悬浮窗。
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="usage.notes">注意事项</h2>
+      <ul>
+        <li data-i18n-html="usage.n1"><strong>HTTPS 要求：</strong>镜像依赖于标签页采集，页面必须是 HTTPS（Chrome 的硬性要求）。</li>
+        <li data-i18n-html="usage.n2"><strong>可视区域：</strong>采集的是当前可见的页面区域；如果被镜像的元素滚动出视口，格子会显示占位提示，滚回可见区域后自动恢复。</li>
+        <li data-i18n-html="usage.n3"><strong>隐私：</strong>所有画面都在本地浏览器内处理，不上传、不存储任何数据。详见<a href="privacy.html">隐私政策</a>。</li>
+      </ul>
+    </section>
+    <section>
+      <h2 data-i18n="usage.install">获取 Chrome 扩展</h2>
+      <p data-i18n-html="usage.install.store">在 Chrome Web Store 搜索 <strong>Magic Mirror</strong>（即将上架）。</p>
+      <h3 data-i18n="usage.local">本地开发加载</h3>
+      <ol class="steps">
+        <li data-i18n-html="usage.install.local.1">克隆仓库：<code>git clone https://github.com/gamepunk/magic-mirror-extension.git</code></li>
+        <li data-i18n-html="usage.install.local.2">构建：<code>bun install && bun run build</code>（需要 <a href="https://bun.sh" target="_blank">Bun</a>）</li>
+        <li data-i18n-html="usage.install.local.3">打开 <code>chrome://extensions</code>，开启「开发者模式」，加载 <code>dist/</code> 目录</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer data-i18n="usage.footer">Magic Mirror（魔镜）· Chrome 扩展</footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

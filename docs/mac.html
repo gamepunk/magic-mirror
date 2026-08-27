@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>macOS App — Magic Mirror</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="images/icon-32.png" alt="" /> Magic Mirror
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="usage.html" data-i18n="nav.extension">Chrome 扩展</a>
+        <a href="mac.html" data-i18n="nav.macos">macOS App</a>
+        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
+        <a href="#" id="langToggle" data-i18n="lang.toggle">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-head">
+      <h1 data-i18n="mac.title">macOS App</h1>
+      <p class="lead" data-i18n="mac.lead">镜像任意窗口或屏幕区域到多个置顶悬浮窗。</p>
+    </div>
+
+    <section>
+      <h2 data-i18n="mac.features">功能</h2>
+      <ul>
+        <li data-i18n-html="mac.f1"><strong>任意窗口镜像：</strong>选择任意打开的窗口，即刻创建浮动画中画叠加层。</li>
+        <li data-i18n-html="mac.f2"><strong>多种容器模式：</strong>每个镜像独立容器 / 同一 App 聚合一个容器 / 所有镜像统一一个容器。</li>
+        <li data-i18n-html="mac.f3"><strong>滚轮缩放：</strong>在镜像上滚动滚轮放大缩小（0.25×–8×）。</li>
+        <li data-i18n-html="mac.f4"><strong>点击穿透：</strong>一键切换，点击穿过悬浮窗与后方内容交互。</li>
+        <li data-i18n-html="mac.f5"><strong>帧率控制：</strong>每个镜像 1–60 FPS 可调。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="mac.getting">获取 / 构建</h2>
+      <ol class="steps">
+        <li data-i18n-html="mac.install.1">克隆仓库：<code>git clone https://github.com/gamepunk/magic-mirror-macos.git</code></li>
+        <li data-i18n-html="mac.install.2">构建并启动：<code>bash scripts/build-app.sh</code></li>
+        <li data-i18n-html="mac.install.3">或使用 Xcode 打开 <code>Package.swift</code> 直接运行。</li>
+      </ol>
+      <div class="note" data-i18n="mac.req">
+        <strong>系统要求：</strong>macOS 14.0+。首次使用需在「系统设置 → 隐私与安全性 → 屏幕录制」中授予权限。
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="mac.privacy">隐私</h2>
+      <p data-i18n="mac.privacy.d">所有画面仅在本地处理，不收集、不上传、不存储任何数据。</p>
+      <p data-i18n-html="mac.repo">
+        开源仓库：<a href="https://github.com/gamepunk/magic-mirror-macos" target="_blank">github.com/gamepunk/magic-mirror-macos</a>
+      </p>
+    </section>
+  </main>
+
+  <footer data-i18n="mac.footer">Magic Mirror（魔镜）· macOS App</footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

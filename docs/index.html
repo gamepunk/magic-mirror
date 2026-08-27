@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Mirror — 屏幕任意内容的实时悬浮镜像</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="images/icon-32.png" alt="" /> Magic Mirror
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="usage.html" data-i18n="nav.extension">Chrome 扩展</a>
+        <a href="mac.html" data-i18n="nav.macos">macOS App</a>
+        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
+        <a href="#" id="langToggle" data-i18n="lang.toggle">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img class="logo" src="images/icon-128.png" alt="Magic Mirror logo" />
+      <span class="hero-badge">Chrome Extension · macOS App</span>
+      <h1 data-i18n="hero.title">Magic Mirror（魔镜）</h1>
+      <p class="lead" data-i18n="hero.lead">
+        把屏幕上的任何内容变成悬浮镜像 —— 网页任意区域、任意窗口，实时、像素级清晰，随你看，随时在。
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#products" data-i18n="btn.products">查看产品</a>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 data-i18n="home.products">产品</h2>
+      <p class="section-desc" data-i18n="home.products.desc">同一个理念，两个平台。</p>
+      <div class="grid">
+        <a class="card card-link" href="usage.html">
+          <div class="icon">🧩</div>
+          <h3 data-i18n="product.ext.t">Chrome 扩展</h3>
+          <p data-i18n="product.ext.d">把网页任意区域变成悬浮实时镜像，支持多页面内容合一、滚轮缩放。</p>
+          <span class="card-cta" data-i18n="product.ext.cta">了解 Chrome 扩展 →</span>
+        </a>
+        <a class="card card-link" href="mac.html">
+          <div class="icon">🖥️</div>
+          <h3 data-i18n="product.mac.t">macOS App</h3>
+          <p data-i18n="product.mac.d">镜像任意窗口或屏幕区域到多个置顶悬浮窗，支持独立 / 按 App 分组 / 统一三种容器模式。</p>
+          <span class="card-cta" data-i18n="product.mac.cta">了解 macOS App →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2 data-i18n="home.features">共同特性</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🪞</div>
+          <h3 data-i18n="home.f1.t">实时像素级镜像</h3>
+          <p data-i18n="home.f1.d">基于真实渲染画面，逐帧更新，与原内容一模一样。</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3 data-i18n="home.f2.t">不动原内容</h3>
+          <p data-i18n="home.f2.d">只读取画面，绝不移动、删除或修改源窗口/网页。</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔍</div>
+          <h3 data-i18n="home.f3.t">滚轮缩放</h3>
+          <p data-i18n="home.f3.d">在镜像上滚动滚轮即可放大缩小，细看每个细节。</p>
+        </div>
+        <div class="card">
+          <div class="icon">🗂️</div>
+          <h3 data-i18n="home.f4.t">多容器模式</h3>
+          <p data-i18n="home.f4.d">独立容器、按 App 分组、统一容器，随你组合。</p>
+        </div>
+        <div class="card">
+          <div class="icon">🖱️</div>
+          <h3 data-i18n="home.f5.t">点击穿透</h3>
+          <p data-i18n="home.f5.d">开启后点击可穿过悬浮窗，不影响后方操作。</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h3 data-i18n="home.f6.t">本地处理 · 隐私友好</h3>
+          <p data-i18n="home.f6.d">所有画面仅在本地处理，不收集、不上传任何数据。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="home.footer">
+    Magic Mirror（魔镜）· 开源 · 所有处理都在本地完成，不上传任何数据
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
