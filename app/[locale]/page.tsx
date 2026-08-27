@@ -1,4 +1,4 @@
-import { getDict, isLocale, type Locale } from "@/lib/i18n";
+import { getDict, isLocale, BASE_PATH, type Locale } from "@/lib/i18n";
 import RiseIn from "@/components/RiseIn";
 import SectionHead from "@/components/SectionHead";
 import HeroVisual from "@/components/HeroVisual";
@@ -18,14 +18,14 @@ export default async function HomePage({
     <main>
       {/* Hero */}
       <section className="hero container-r">
-        <img className="logo" src="/images/icon-128.png" alt="Magic Mirror logo" />
+        <img className="logo" src={`${BASE_PATH}/images/icon-128.png`} alt="Magic Mirror logo" />
         <h1>{dict["hero.title"]}</h1>
         <p className="lead">{dict["hero.lead"]}</p>
         <div className="hero-actions">
-          <a className="btn" href={`/${locale}/download/`}>
+          <a className="btn" href={`${BASE_PATH}/${locale}/download/`}>
             {dict["hero.cta.mac"]}
           </a>
-          <a className="btn ghost" href={`/${locale}/help/`}>
+          <a className="btn ghost" href={`${BASE_PATH}/${locale}/help/`}>
             {dict["hero.cta.ext"]}
           </a>
         </div>

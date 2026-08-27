@@ -1,4 +1,4 @@
-import { getDict, isLocale, type Locale } from "@/lib/i18n";
+import { getDict, isLocale, BASE_PATH, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
 import RiseIn from "@/components/RiseIn";
 
@@ -21,11 +21,11 @@ export default async function MediaKitPage({
             <h3>{dict["media.logo.t"]}</h3>
             <p>{dict["media.logo.d"]}</p>
             <div style={{ display: "flex", gap: 20, marginTop: 16, alignItems: "center" }}>
-              <img src="/images/icon-128.png" alt="Magic Mirror 128px" width={128} height={128} />
-              <a className="btn small" href="/images/icon-128.png" download>
+              <img src={`${BASE_PATH}/images/icon-128.png`} alt="Magic Mirror 128px" width={128} height={128} />
+              <a className="btn small" href={`${BASE_PATH}/images/icon-128.png`} download>
                 PNG 128px
               </a>
-              <a className="btn small ghost" href="/images/icon-32.png" download>
+              <a className="btn small ghost" href={`${BASE_PATH}/images/icon-32.png`} download>
                 PNG 32px
               </a>
             </div>

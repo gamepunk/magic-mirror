@@ -4,6 +4,9 @@ import en from "@/messages/en.json";
 export const locales = ["zh", "en"] as const;
 export type Locale = (typeof locales)[number];
 
+/** GitHub Pages 部署子路径（与 next.config.ts 的 basePath 保持一致）。 */
+export const BASE_PATH = "/magic-mirror";
+
 export const dictionaries = { zh, en } as const;
 export type Dict = typeof zh;
 

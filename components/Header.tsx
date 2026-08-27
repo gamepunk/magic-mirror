@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { localeHref, type Dict, type Locale } from "@/lib/i18n";
+import { localeHref, BASE_PATH, type Dict, type Locale } from "@/lib/i18n";
 
 /** 顶部导航：品牌 + 链接 + 语言切换 + 下载按钮。 */
 export default function Header({ locale, dict }: { locale: Locale; dict: Dict }) {
@@ -21,7 +21,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Dict })
     <header className="site-header">
       <div className="header-inner">
         <Link className="brand" href={localeHref(locale, "/")}>
-          <img src="/images/icon-32.png" alt="" /> Magic Mirror
+          <img src={`${BASE_PATH}/images/icon-32.png`} alt="" /> Magic Mirror
         </Link>
         <nav className="nav-links">
           {items.map((item) => (

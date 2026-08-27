@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { localeHref, type Dict, type Locale } from "@/lib/i18n";
+import { localeHref, BASE_PATH, type Dict, type Locale } from "@/lib/i18n";
 
 /** 页脚（深色）：品牌 + 三列链接 + 版权。 */
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dict }) {
@@ -9,7 +9,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Dict })
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <img src="/images/icon-32.png" alt="" />
+          <img src={`${BASE_PATH}/images/icon-32.png`} alt="" />
           <p>{dict["footer.about"]}</p>
         </div>
 

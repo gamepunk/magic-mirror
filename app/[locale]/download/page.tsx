@@ -1,4 +1,4 @@
-import { getDict, isLocale, type Locale } from "@/lib/i18n";
+import { getDict, isLocale, BASE_PATH, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
 import RiseIn from "@/components/RiseIn";
 
@@ -18,10 +18,10 @@ export default async function DownloadPage({
       <section id="download" className="content-section container-narrow">
         <h2>{dict["mac.download"]}</h2>
         <div className="dl-buttons">
-          <a className="btn" href="/downloads/MagicMirror-0.1.0.dmg">
+          <a className="btn" href={`${BASE_PATH}/downloads/MagicMirror-0.1.0.dmg`}>
             {dict["mac.dmg"]}
           </a>
-          <a className="btn ghost" href="/downloads/MagicMirror-0.1.0.zip">
+          <a className="btn ghost" href={`${BASE_PATH}/downloads/MagicMirror-0.1.0.zip`}>
             {dict["mac.zip"]}
           </a>
         </div>
