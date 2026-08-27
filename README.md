@@ -3,7 +3,7 @@
 本仓库托管 Magic Mirror 的 GitHub Pages 网站。
 
 - 🌐 网站：https://gamepunk.github.io/magic-mirror/
-- 🖥️ macOS App 下载：https://gamepunk.github.io/magic-mirror/zh/download/
+- 🖥️ macOS App 下载：https://gamepunk.github.io/magic-mirror/zh/mac/
 
 ## 技术栈
 
@@ -34,7 +34,7 @@ bun run typecheck    # TypeScript 类型检查
 This repository hosts the Magic Mirror GitHub Pages site.
 
 - 🌐 Site: https://gamepunk.github.io/magic-mirror/
-- 🖥️ macOS App download: https://gamepunk.github.io/magic-mirror/en/download/
+- 🖥️ macOS App download: https://gamepunk.github.io/magic-mirror/en/mac/
 
 ## Stack
 

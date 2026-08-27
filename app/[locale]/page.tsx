@@ -22,10 +22,10 @@ export default async function HomePage({
         <h1>{dict["hero.title"]}</h1>
         <p className="lead">{dict["hero.lead"]}</p>
         <div className="hero-actions">
-          <a className="btn" href={`${BASE_PATH}/${locale}/download/`}>
+          <a className="btn" href={`${BASE_PATH}/${locale}/mac/`}>
             {dict["hero.cta.mac"]}
           </a>
-          <a className="btn ghost" href={`${BASE_PATH}/${locale}/help/`}>
+          <a className="btn ghost" href={`${BASE_PATH}/${locale}/extension/`}>
             {dict["hero.cta.ext"]}
           </a>
         </div>
@@ -52,6 +52,29 @@ export default async function HomePage({
               <p>{dict[`features.f${i}.d` as keyof typeof dict]}</p>
             </RiseIn>
           ))}
+        </div>
+      </section>
+
+      {/* 两类产品 */}
+      <section className="container-r">
+        <SectionHead title={dict["products.title"]} desc={dict["products.desc"]} />
+        <div className="products">
+          <RiseIn className="pcard">
+            <div className="icon">🖥️</div>
+            <h3>{dict["products.desktop.t"]}</h3>
+            <p>{dict["products.desktop.d"]}</p>
+            <a className="btn small" href={`${BASE_PATH}/${locale}/mac/`}>
+              {dict["products.desktop.cta"]}
+            </a>
+          </RiseIn>
+          <RiseIn className="pcard">
+            <div className="icon">🧩</div>
+            <h3>{dict["products.browser.t"]}</h3>
+            <p>{dict["products.browser.d"]}</p>
+            <a className="btn small ghost" href={`${BASE_PATH}/${locale}/extension/`}>
+              {dict["products.browser.cta"]}
+            </a>
+          </RiseIn>
         </div>
       </section>
 

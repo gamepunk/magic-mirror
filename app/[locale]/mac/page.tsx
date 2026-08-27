@@ -13,7 +13,7 @@ export default async function DownloadPage({
 
   return (
     <main>
-      <PageHead title={dict["download.title"]} lead={dict["download.lead"]} />
+      <PageHead title={dict["mac.title"]} lead={dict["mac.lead"]} />
 
       <section id="download" className="content-section container-narrow">
         <h2>{dict["mac.download"]}</h2>

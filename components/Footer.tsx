@@ -15,7 +15,8 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Dict })
 
         <div className="footer-col">
           <h4>{dict["footer.product"]}</h4>
-          <Link href={l("/download")}>{dict["footer.download"]}</Link>
+          <Link href={l("/mac")}>{dict["footer.mac"]}</Link>
+          <Link href={l("/extension")}>{dict["footer.extension"]}</Link>
           <Link href={l("/pricing")}>{dict["footer.pricing"]}</Link>
           <Link href={l("/teams")}>{dict["footer.teams"]}</Link>
           <Link href={l("/updates")}>{dict["footer.updates"]}</Link>
