@@ -40,6 +40,20 @@
     </section>
 
     <section>
+      <h2 data-i18n="mac.download">下载</h2>
+      <div class="dl-buttons">
+        <a class="btn" href="downloads/MagicMirror-0.1.0.dmg" data-i18n="mac.dmg">下载 DMG（推荐）</a>
+        <a class="btn ghost" href="downloads/MagicMirror-0.1.0.zip" data-i18n="mac.zip">下载 ZIP</a>
+      </div>
+      <ol class="steps">
+        <li data-i18n="mac.dl.1">解压后把 MagicMirror.app 拖入「应用程序」文件夹。</li>
+        <li data-i18n-html="mac.dl.2">首次打开：右键点击应用 → <strong>打开</strong> → 打开。</li>
+        <li data-i18n-html="mac.dl.3">在「系统设置 → 隐私与安全性 → 屏幕录制」中授予权限，然后重启应用。</li>
+      </ol>
+      <div class="note" data-i18n="mac.dl.note">应用未公证（公证需要付费的 Apple Developer ID），因此首次打开需要一次右键放行，之后即可正常使用。</div>
+    </section>
+
+    <section>
       <h2 data-i18n="mac.getting">获取 / 构建</h2>
       <ol class="steps">
         <li data-i18n-html="mac.install.1">克隆仓库：<code>git clone https://github.com/gamepunk/magic-mirror-macos.git</code></li>
@@ -47,7 +61,7 @@
         <li data-i18n-html="mac.install.3">或使用 Xcode 打开 <code>Package.swift</code> 直接运行。</li>
       </ol>
       <div class="note" data-i18n="mac.req">
-        <strong>系统要求：</strong>macOS 14.0+。首次使用需在「系统设置 → 隐私与安全性 → 屏幕录制」中授予权限。
+        系统要求：macOS 13.0+（Ventura）。首次使用需在「系统设置 → 隐私与安全性 → 屏幕录制」中授予权限。
       </div>
     </section>
 
