@@ -1,5 +1,9 @@
 # Magic Mirror 官网
 
+![Website](https://img.shields.io/badge/website-gamepunk.github.io%2Fmagic-mirror-blue)
+![CI](https://img.shields.io/github/actions/workflow/status/gamepunk/magic-mirror/deploy.yml?label=CI)
+![Stack](https://img.shields.io/badge/Next.js%20%7C%20TypeScript%20%7C%20bun-black)
+
 本仓库托管 Magic Mirror 的 GitHub Pages 网站。
 
 - 🌐 网站：https://gamepunk.github.io/magic-mirror/
