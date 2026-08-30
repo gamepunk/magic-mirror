@@ -1,0 +1,20 @@
+{% assign t = site.data[page.lang] %}
+{% assign base = site.baseurl %}
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ base }}/{{ page.lang }}/">
+      <img src="{{ base }}/assets/images/icon-32.png" alt="" width="28" height="28" />
+      <span>Magic Mirror</span>
+    </a>
+    <nav class="main-nav">
+      <a href="{{ base }}/{{ page.lang }}/">{{ t.nav.home }}</a>
+      <a href="{{ base }}/{{ page.lang }}/extension/">{{ t.nav.extension }}</a>
+      <a href="{{ base }}/{{ page.lang }}/mac/">{{ t.nav.mac }}</a>
+      <a href="{{ base }}/{{ page.lang }}/pricing/">{{ t.nav.pricing }}</a>
+      <a href="{{ base }}/{{ page.lang }}/blog/">{{ t.nav.blog }}</a>
+      <a href="{{ base }}/{{ page.lang }}/help/">{{ t.nav.help }}</a>
+      <a class="lang-switch" href="{{ t.lang_url }}">{{ t.lang_label }}</a>
+      <a class="btn small" href="{{ base }}/{{ page.lang }}/mac/">{{ t.nav.mac }}</a>
+    </nav>
+  </div>
+</header>

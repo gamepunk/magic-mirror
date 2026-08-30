@@ -1,0 +1,26 @@
+# Magic Mirror 官网 —— Jekyll 配置
+# GitHub Pages 原生支持 Jekyll，push 到 main 即自动构建部署。
+title: Magic Mirror
+description: 把屏幕上的任何内容变成实时悬浮镜像 —— 浏览器扩展 + macOS App
+baseurl: "/magic-mirror"
+url: "https://gamepunk.github.io"
+markdown: kramdown
+permalink: pretty
+
+# 站点导航（标题用 _data 里的 i18n）
+lang: zh-CN
+
+# 博客文章按语言分成两个 collection，输出到 /zh/blog/<标题>/ 与 /en/blog/<标题>/
+collections:
+  zh_posts:
+    output: true
+    permalink: /zh/blog/:title/
+  en_posts:
+    output: true
+    permalink: /en/blog/:title/
+
+# 忽略不必要的文件
+exclude:
+  - README.md
+  - node_modules
+  - .github

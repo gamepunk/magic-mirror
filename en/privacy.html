@@ -1,0 +1,49 @@
+---
+layout: default
+lang: en
+title: Privacy Policy
+lead: "Effective date: August 28, 2026"
+---
+
+<div class="page-head">
+  <h1>Privacy Policy</h1>
+  <p class="lead">Effective date: August 28, 2026</p>
+</div>
+
+<section class="content-section container-narrow">
+  <p>Magic Mirror respects your privacy. This policy explains what information the Chrome extension and the macOS app access, and how it is handled.</p>
+  <div class="note"><strong>In one sentence: frame content is processed entirely locally — this product never collects, stores, uploads, or sells your screen data.</strong> The only exception is anonymous diagnostic information sent when the macOS app crashes (see below), which never contains frame content.</div>
+
+  <h2>Scope</h2>
+  <p>This policy applies to both products:</p>
+  <ul>
+    <li><strong>Chrome Extension (Magic Mirror)</strong> — mirrors regions of webpages into a floating window inside Chrome.</li>
+    <li><strong>macOS App (Magic Mirror)</strong> — mirrors any window or screen region into a floating on-top window.</li>
+  </ul>
+
+  <h2>Screen content (mirrored frames)</h2>
+  <p>When you create a mirror, the product reads the <em>rendered pixels</em> of the selected area to display them in the floating window.</p>
+  <ul>
+    <li>This data is used only to draw the mirror you requested and is processed in memory only.</li>
+    <li>Captured frames are processed <strong>locally</strong> on your device and are never uploaded, stored, or transmitted anywhere.</li>
+    <li>The product cannot read page DOM, form data, or clipboard content, and never persists any frames.</li>
+  </ul>
+
+  <h2>Tab titles &amp; URLs (Chrome extension only)</h2>
+  <p>When you combine content from multiple pages into one window, the extension reads the <strong>title/URL</strong> of joining tabs, solely to label the source on mirror tiles. This is used for on-screen labels only and is never stored or transmitted.</p>
+
+  <h2>Settings (Chrome extension only)</h2>
+  <p>The extension stores settings locally in the browser to remember your preferences across sessions. This data stays on your device.</p>
+
+  <h2>Crash diagnostics (macOS app only)</h2>
+  <p>The macOS app integrates Sentry crash reporting: <strong>only when the app crashes</strong>, an anonymous diagnostic report (crash stack, app version, and OS version) is sent automatically to help fix issues. <strong>It never contains frame content, files, or personal information</strong>. No network requests are made during normal use.</p>
+
+  <h2>No accounts, no analytics, no ads</h2>
+  <p>This product contains <strong>no</strong> analytics, tracking, advertising, or third-party code; there is no account system, no backend server, and no usage data collection.</p>
+
+  <h2>Policy changes</h2>
+  <p>If this policy changes, the effective date at the top of this page will be updated and the new version published at this address.</p>
+
+  <h2>Contact us</h2>
+  <p>Questions about this policy? Open an issue: <a href="https://github.com/gamepunk/magic-mirror/issues" target="_blank" rel="noopener">github.com/gamepunk/magic-mirror</a></p>
+</section>

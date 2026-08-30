@@ -1,0 +1,28 @@
+nav:
+  home: 首页
+  extension: 浏览器扩展
+  mac: macOS App
+  pricing: 定价
+  blog: 博客
+  help: 帮助
+lang_label: English
+lang_url: /magic-mirror/en/
+
+footer_about: Magic Mirror（魔镜）—— 把屏幕上的任何内容变成实时悬浮镜像。所有处理都在本地完成，不上传任何数据。
+col_product: 产品
+col_ext: Chrome 扩展
+col_mac: macOS App
+col_pricing: 定价
+col_blog: 博客
+col_resources: 资源
+col_help: 帮助
+col_usecases: 使用场景
+col_updates: 更新日志
+col_privacy: 隐私政策
+col_terms: 服务条款
+col_more: 更多
+col_about: 关于
+col_contact: 联系我们
+col_media: 媒体素材
+copyright: © 2026 Magic Mirror · 保留所有权利
+privacy_note: 本地优先 · 无追踪 · 无数据收集

@@ -1,0 +1,18 @@
+{% assign t = site.data[page.lang] %}
+{% assign base = site.baseurl %}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} — Magic Mirror{% else %}Magic Mirror{% endif %}</title>
+  <meta name="description" content="{% if page.lead %}{{ page.lead }}{% else %}{{ site.description }}{% endif %}" />
+  <link rel="icon" href="{{ base }}/assets/images/icon-32.png" />
+  <link rel="stylesheet" href="{{ base }}/assets/css/style.css" />
+</head>
+<body>
+  {% include header.html %}
+  <main>{{ content }}</main>
+  {% include footer.html %}
+</body>
+</html>

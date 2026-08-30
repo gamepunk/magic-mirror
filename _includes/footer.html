@@ -1,0 +1,35 @@
+{% assign t = site.data[page.lang] %}
+{% assign base = site.baseurl %}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="{{ base }}/assets/images/icon-32.png" alt="" />
+      <p>{{ t.footer_about }}</p>
+    </div>
+    <div class="footer-col">
+      <h4>{{ t.col_product }}</h4>
+      <a href="{{ base }}/{{ page.lang }}/extension/">{{ t.col_ext }}</a>
+      <a href="{{ base }}/{{ page.lang }}/mac/">{{ t.col_mac }}</a>
+      <a href="{{ base }}/{{ page.lang }}/pricing/">{{ t.col_pricing }}</a>
+      <a href="{{ base }}/{{ page.lang }}/blog/">{{ t.col_blog }}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{{ t.col_resources }}</h4>
+      <a href="{{ base }}/{{ page.lang }}/help/">{{ t.col_help }}</a>
+      <a href="{{ base }}/{{ page.lang }}/usecases/">{{ t.col_usecases }}</a>
+      <a href="{{ base }}/{{ page.lang }}/updates/">{{ t.col_updates }}</a>
+      <a href="{{ base }}/{{ page.lang }}/privacy/">{{ t.col_privacy }}</a>
+      <a href="{{ base }}/{{ page.lang }}/terms/">{{ t.col_terms }}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{{ t.col_more }}</h4>
+      <a href="{{ base }}/{{ page.lang }}/about/">{{ t.col_about }}</a>
+      <a href="{{ base }}/{{ page.lang }}/contact/">{{ t.col_contact }}</a>
+      <a href="{{ base }}/{{ page.lang }}/media-kit/">{{ t.col_media }}</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>{{ t.copyright }}</span>
+    <span>{{ t.privacy_note }}</span>
+  </div>
+</footer>

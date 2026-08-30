@@ -1,25 +1,16 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
+# Jekyll 构建产物
+/_site/
 
-# next.js
+# Next.js 遗留构建产物
 /.next/
 /out/
+
+# 依赖
+/node_modules
 
 # misc
 .DS_Store
 *.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-bun-debug.log*
-
 # env
 .env*
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts

@@ -1,0 +1,28 @@
+nav:
+  home: Home
+  extension: Extensions
+  mac: macOS App
+  pricing: Pricing
+  blog: Blog
+  help: Help
+lang_label: 中文
+lang_url: /magic-mirror/zh/
+
+footer_about: Magic Mirror — turn anything on your screen into a floating live mirror. Everything is processed locally; nothing is uploaded.
+col_product: Product
+col_ext: Chrome Extension
+col_mac: macOS App
+col_pricing: Pricing
+col_blog: Blog
+col_resources: Resources
+col_help: Help
+col_usecases: Use cases
+col_updates: Updates
+col_privacy: Privacy Policy
+col_terms: Terms
+col_more: More
+col_about: About
+col_contact: Contact
+col_media: Media Kit
+copyright: © 2026 Magic Mirror · All rights reserved
+privacy_note: Local-first · No tracking · No data collection

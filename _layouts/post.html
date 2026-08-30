@@ -1,0 +1,29 @@
+{% assign t = site.data[page.lang] %}
+{% assign base = site.baseurl %}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} — Magic Mirror</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}" />
+  <link rel="icon" href="{{ base }}/assets/images/icon-32.png" />
+  <link rel="stylesheet" href="{{ base }}/assets/css/style.css" />
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    <div class="page-head">
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.date | date: "%Y-%m-%d" }}</p>
+    </div>
+    <section class="content-section container-narrow">
+      <article class="doc-item">{{ content }}</article>
+      <p style="text-align: center; margin-top: 28px">
+        <a href="{{ base }}/{{ page.lang }}/blog/">← {{ t.nav.blog }}</a>
+      </p>
+    </section>
+  </main>
+  {% include footer.html %}
+</body>
+</html>
