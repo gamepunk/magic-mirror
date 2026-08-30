@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getDict, isLocale, localeHref, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
@@ -7,6 +8,19 @@ const POSTS = ["extension-0-0-1", "app-0-0-1"] as const;
 
 export function generateStaticParams() {
   return POSTS.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale: raw, slug } = await params;
+  const locale: Locale = isLocale(raw) ? raw : "zh";
+  const dict = getDict(locale);
+  const post = (POSTS as readonly string[]).includes(slug) ? slug : POSTS[0];
+  const title = dict[`blog.${post}.t` as keyof typeof dict];
+  return { title: `${title} — Magic Mirror` };
 }
 
 export default async function BlogPostPage({
@@ -38,7 +52,7 @@ export default async function BlogPostPage({
         </article>
 
         <p style={{ marginTop: 28, textAlign: "center" }}>
-          <Link href={localeHref(locale, "/blog")}>← {dict["blog.back"]}</Link>
+          <Link href={localeHref(locale, "/blog")}>{dict["blog.back"]}</Link>
         </p>
       </section>
     </main>
