@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magic Mirror</title>
+  <!-- 裸根路径（/magic-mirror/）没有对应页面，重定向到默认语言的官网首页。 -->
+  <meta http-equiv="refresh" content="0; url=/magic-mirror/zh/" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f5f5f7;
+      color: #333;
+    }
+    a {
+      color: #4285f4;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Magic Mirror · 正在跳转…
+    <a href="/magic-mirror/zh/">进入官网</a>
+  </p>
+  <script>location.replace("/magic-mirror/zh/");</script>
+</body>
+</html>
