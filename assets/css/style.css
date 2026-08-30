@@ -388,6 +388,7 @@ a:hover {
 
 /* ---------- 页脚 ---------- */
 .site-footer {
+  flex-shrink: 0;
   margin-top: 48px;
   background: #101010;
   color: #f5f5f7;
