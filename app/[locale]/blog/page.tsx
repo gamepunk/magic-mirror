@@ -1,4 +1,5 @@
-import { getDict, isLocale, type Locale } from "@/lib/i18n";
+import Link from "next/link";
+import { getDict, isLocale, localeHref, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
 import RiseIn from "@/components/RiseIn";
 
@@ -18,9 +19,11 @@ export default async function BlogPage({
       <section className="content-section container-narrow">
         <div className="doc-list">
           <RiseIn className="post-card">
-            <div className="date">{dict["blog.p1.date"]}</div>
-            <h3>{dict["blog.p1.t"]}</h3>
-            <p>{dict["blog.p1.d"]}</p>
+            <Link href={localeHref(locale, "/blog/magic-mirror-0-0-1")}>
+              <div className="date">{dict["blog.p1.date"]}</div>
+              <h3>{dict["blog.p1.t"]}</h3>
+              <p>{dict["blog.p1.d"]}</p>
+            </Link>
           </RiseIn>
         </div>
       </section>

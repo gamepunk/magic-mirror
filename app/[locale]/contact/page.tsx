@@ -18,12 +18,6 @@ export default async function ContactPage({
       <section className="content-section container-narrow">
         <div className="doc-list">
           <RiseIn className="doc-item">
-            <h3>{dict["contact.email.t"]}</h3>
-            <p>
-              <a href="mailto:support@magicmirror.app">support@magicmirror.app</a>
-            </p>
-          </RiseIn>
-          <RiseIn className="doc-item">
             <h3>{dict["contact.issue.t"]}</h3>
             <p>
               <a href="https://github.com/gamepunk/magic-mirror/issues" target="_blank" rel="noopener">
