@@ -2,8 +2,8 @@ import Link from "next/link";
 import { getDict, isLocale, localeHref, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
 
-/** 博客文章 slug 列表（正文用 blog.<slug>.* 的 i18n key 渲染）。 */
-const POSTS = ["magic-mirror-0-0-1"] as const;
+/** 博客文章 slug 列表（标题/摘要/正文用 blog.<slug>.* 的 i18n key 渲染）。 */
+const POSTS = ["extension-0-0-1", "app-0-0-1"] as const;
 
 export function generateStaticParams() {
   return POSTS.map((slug) => ({ slug }));

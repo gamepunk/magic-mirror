@@ -3,6 +3,8 @@ import { getDict, isLocale, localeHref, type Locale } from "@/lib/i18n";
 import PageHead from "@/components/PageHead";
 import RiseIn from "@/components/RiseIn";
 
+const POSTS = ["extension-0-0-1", "app-0-0-1"] as const;
+
 export default async function BlogPage({
   params,
 }: {
@@ -18,13 +20,15 @@ export default async function BlogPage({
 
       <section className="content-section container-narrow">
         <div className="doc-list">
-          <RiseIn className="post-card">
-            <Link href={localeHref(locale, "/blog/magic-mirror-0-0-1")}>
-              <div className="date">{dict["blog.p1.date"]}</div>
-              <h3>{dict["blog.p1.t"]}</h3>
-              <p>{dict["blog.p1.d"]}</p>
-            </Link>
-          </RiseIn>
+          {POSTS.map((slug) => (
+            <RiseIn key={slug} className="post-card">
+              <Link href={localeHref(locale, `/blog/${slug}`)}>
+                <div className="date">{dict[`blog.${slug}.date` as keyof typeof dict]}</div>
+                <h3>{dict[`blog.${slug}.t` as keyof typeof dict]}</h3>
+                <p>{dict[`blog.${slug}.d` as keyof typeof dict]}</p>
+              </Link>
+            </RiseIn>
+          ))}
         </div>
       </section>
     </main>
