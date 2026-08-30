@@ -7,12 +7,12 @@
       <sparkle:shortVersionString>0.0.2</sparkle:shortVersionString>
       <sparkle:version>0.0.2.185</sparkle:version>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.2.zip" sparkle:edSignature="JLmLCjNKCyjPj96Wz5jN3erWpiZesQVBb+N8yHyzbMf/2izozS3RLiMl2M0EmzlJS+kI1VoLiALDM5FRUVtgAg==" length="5714418" type="application/octet-stream"/>
-      <description><![CDATA[Magic Mirror 0.0.2 更新。]]></description>
+      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.2.zip" sparkle:edSignature="NVLArfwO4CfC+XniyxunxpdPOTAdu5CbDXqhXRb4louPqE/+H+a9GhbBNaKrK4aS0Iry3rcJVfKDS9XxgrzoCA==" length="5714418" type="application/octet-stream"/>
+      <description><![CDATA[<h3>Magic Mirror 0.0.2</h3><ul><li>缩放体验全面优化：边缘 / 角落缩放不抖动、放大无黑边、缩放时对角固定</li><li>镜像窗口默认隐藏标题栏（无边框悬浮图层，像截图缩略图）</li><li>初始窗口大小可调（15%–80%）</li><li>源画面不可用时按原因提示：被遮挡 / 窗口不在屏幕 / 画面未更新</li><li>窗口列表不再显示镜像容器自身</li></ul>]]></description>
     </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: NRIqylanclwdpE00RLapHBGgB4TBQoX9oplufWmGjoI/Ob0E8fU+LC3zGEbFHH4YpRzl+1Y/0HwyTBUqBjiHAg==
-length: 828
+edSignature: VDuqwXIo28Vfm2854jHn0BjSHmHMrtg8gWo4Jfw8hllJubNoWQVBlDhDsWPqKX1vX0y2BZvmHriIJfBZo6keDA==
+length: 1229
 -->
