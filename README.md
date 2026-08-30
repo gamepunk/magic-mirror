@@ -60,4 +60,13 @@ bun run typecheck    # TypeScript type check
 
 Pushing to `main` triggers GitHub Actions (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages (set the Pages source to **GitHub Actions** in repo settings).
 
+## Changelog
+
+### 0.0.1
+
+- Site launch: bilingual (ZH/EN), product intro, macOS App download page, extension page, usage guide, privacy policy, media kit
+- macOS App downloads (0.0.1 dmg/zip) and Sparkle `appcast.xml` update feed
+- Chrome extension store listing info + install button
+- README badges
+
 Download artifacts (dmg/zip) and the Sparkle `appcast.xml` live in `public/` and are exported with the site (`/downloads/`, `/appcast.xml` paths are unchanged).
