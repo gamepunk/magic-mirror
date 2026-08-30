@@ -166,7 +166,7 @@
   "usage.n2": "<strong>Visible area:</strong> only the visible page area is captured; if an element scrolls out of view the tile shows a placeholder and resumes automatically when it's back.",
   "usage.n3": "<strong>Privacy:</strong> everything is processed locally in your browser — nothing is uploaded or stored. See the <a href=\"privacy.html\">privacy policy</a>.",
   "usage.install": "Get the Chrome Extension",
-  "usage.install.store": "Search for <strong>Magic Mirror</strong> in the Chrome Web Store (coming soon).",
+  "usage.install.store": "Now available on the Chrome Web Store: <a href=\"https://chromewebstore.google.com/detail/jfapgohnocglaaminogpmjgabkokgnfl\" target=\"_blank\" rel=\"noreferrer\">install Magic Mirror</a>.",
   "privacy.title": "Privacy Policy",
   "privacy.effective": "Effective date: August 28, 2026",
   "privacy.lead.1": "Magic Mirror respects your privacy. This policy explains what information the Chrome extension and the macOS app access, and how it is handled.",
@@ -299,8 +299,8 @@
   "extension.lead": "Turn any region of a webpage into a floating live mirror.",
   "extension.supported": "Supported browsers",
   "extension.chrome.t": "Chrome",
-  "extension.chrome.d": "Mirror any region of a webpage in Chrome — combine multiple pages, scroll to zoom.",
-  "extension.chrome.status": "Coming soon",
+  "extension.chrome.d": "Mirror any region of a webpage in Chrome — combine multiple pages, scroll to zoom. Now live on the Chrome Web Store.",
+  "extension.chrome.status": "Available",
   "extension.firefox.t": "Firefox",
   "extension.firefox.d": "Firefox support is adapted (popup-window fallback + event-page background) and under validation.",
   "extension.firefox.status": "Adapted · Testing",
@@ -309,6 +309,7 @@
   "extension.edge.status": "Coming soon",
   "extension.install": "Install & use",
   "extension.install.d": "After installing, click the Magic Mirror icon in your browser toolbar to pick a page region and start mirroring.",
+  "extension.install.cta": "Install Extension",
   "extension.guide": "See the full guide in Help →",
   "footer.extension": "Extensions"
 }

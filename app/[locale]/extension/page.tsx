@@ -11,10 +11,14 @@ export default async function ExtensionPage({
   const locale: Locale = isLocale(raw) ? raw : "zh";
   const dict = getDict(locale);
 
+  // Chrome 扩展已上架 Chrome Web Store；Firefox / Edge 适配中。
+  const CHROME_STORE_URL =
+    "https://chromewebstore.google.com/detail/jfapgohnocglaaminogpmjgabkokgnfl";
+
   const browsers = [
-    { key: "chrome", icon: "🧩" },
-    { key: "firefox", icon: "🦊" },
-    { key: "edge", icon: "🌐" },
+    { key: "chrome", icon: "🧩", storeUrl: CHROME_STORE_URL },
+    { key: "firefox", icon: "🦊", storeUrl: null },
+    { key: "edge", icon: "🌐", storeUrl: null },
   ] as const;
 
   return (
@@ -44,6 +48,17 @@ export default async function ExtensionPage({
               >
                 {dict[`extension.${b.key}.status` as keyof typeof dict]}
               </span>
+              {b.storeUrl && (
+                <a
+                  className="btn small"
+                  href={b.storeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginTop: 12 }}
+                >
+                  {dict["extension.install.cta"]}
+                </a>
+              )}
             </RiseIn>
           ))}
         </div>
