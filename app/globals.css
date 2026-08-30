@@ -1214,8 +1214,11 @@ footer.site-footer {
   margin-right: auto;
 }
 
-/* 深色页脚（Paste 风格：bg-ink 白字） */
-.site-footer {
+/* 深色页脚（Paste 风格：bg-ink 白字）。
+   用 footer.site-footer 与上方基础规则同优先级、且位于其后，确保
+   深色背景生效（仅 .site-footer 会被基础规则的浅色背景覆盖，
+   造成白字白底看不见）。 */
+footer.site-footer {
   background: #101010;
   color: #f5f5f7;
   border-top: none;
