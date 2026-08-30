@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Magic Mirror</title>
-  <!-- 裸根路径（/magic-mirror/）没有对应页面，重定向到默认语言的官网首页。 -->
+  <!-- 裸根路径（/magic-mirror/）没有对应页面，按浏览器语言重定向到官网首页。 -->
   <meta http-equiv="refresh" content="0; url=/magic-mirror/zh/" />
   <style>
     body {
@@ -26,6 +26,12 @@
     Magic Mirror · 正在跳转…
     <a href="/magic-mirror/zh/">进入官网</a>
   </p>
-  <script>location.replace("/magic-mirror/zh/");</script>
+  <script>
+    (function () {
+      var lang = (navigator.language || "zh").toLowerCase();
+      var target = lang.indexOf("zh") === 0 ? "zh" : "en";
+      location.replace("/magic-mirror/" + target + "/");
+    })();
+  </script>
 </body>
 </html>
