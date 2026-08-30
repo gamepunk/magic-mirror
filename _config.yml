@@ -19,8 +19,10 @@ collections:
     output: true
     permalink: /en/blog/:title/
 
-# 忽略不必要的文件
+# 忽略不必要的文件（out/ 是 Next.js 遗留产物，避免被复制进 _site）
 exclude:
   - README.md
   - node_modules
+  - out
+  - .next
   - .github
