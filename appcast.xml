@@ -3,16 +3,16 @@
   <channel>
     <title>Magic Mirror 更新</title>
     <item>
-      <title>Magic Mirror 0.0.2</title>
-      <sparkle:shortVersionString>0.0.2</sparkle:shortVersionString>
-      <sparkle:version>0.0.2.189</sparkle:version>
+      <title>Magic Mirror 0.0.3</title>
+      <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
+      <sparkle:version>0.0.3.278</sparkle:version>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.2.zip" sparkle:edSignature="wI2DnDSAuXN+HokpaTrKmqCYejf1mh297ZplMZ0EJlpqHjK+tm8rl50a+ghplfT5Re6zgWFkd1fTikzCuhqaCw==" length="5714417" type="application/octet-stream"/>
-      <description><![CDATA[<h3>Magic Mirror 0.0.2</h3><ul><li>缩放更流畅：放大缩小不再抖动，画面清晰无黑边</li><li>镜像窗口更清爽：默认无边框，只显示镜像内容</li><li>初始窗口大小可自定义（15%–80%）</li><li>画面不可用时明确提示原因（窗口被遮挡 / 不在屏幕 / 内容未更新）</li><li>其他稳定性与体验优化</li></ul>]]></description>
+      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.3.zip" sparkle:edSignature="SGovYvNKRYYqns5kZXgiyq+HZZfCcvzvQP3XVutDGT74nAgsmUxoMYR/B/SKJjT2hVzkkOntFzsJ5Cd6XQmlDg==" length="5977914" type="application/octet-stream"/>
+      <description><![CDATA[<h3>Magic Mirror 0.0.3</h3><ul><li>菜单窗口列表按桌面分组：当前桌面与其余桌面分开显示，其他桌面的窗口也能直接镜像</li><li>画廊容器升级为自由画布：镜像卡片可随意拖动摆放，按内容宽高比自适应大小</li><li>容器模式即时生效：在设置中切换「独立窗口 / 按 App 分组 / 统一容器」时，已有镜像立即按新模式重新组织，无需重新创建</li><li>画面提示更准确：镜像内容正常更新时不再误报「被遮挡」</li><li>多屏更清晰：镜像窗口在副屏上按对应显示器的缩放比捕获</li><li>性能与功耗优化：内部状态重构、遮挡检测合并查询，运行更流畅、更省电</li><li>稳定性：新增大量自动化测试，防止功能回归</li></ul>]]></description>
     </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: /OgJGkLIUtGhBWLu+KU1uQA/dYMth6u5DMtw47bIce4CLCbqyzUqqicyGh1y47ec+Cbpcdbcf0xnXQLlzruDDg==
-length: 1175
+edSignature: kPLZKwpBawrx0jpKf8OASAkr8A+K4ZIH5yGAIZpu574JnxR608ztFo63j0mqhco+aZCaAkRQttNy5tJszBx7Dg==
+length: 1600
 -->
