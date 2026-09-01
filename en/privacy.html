@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Privacy Policy
-lead: "Effective date: August 28, 2026"
+lead: "Effective date: September 1, 2026"
 ---
 
 <div class="page-head">
@@ -27,6 +27,14 @@ lead: "Effective date: August 28, 2026"
     <li>This data is used only to draw the mirror you requested and is processed in memory only.</li>
     <li>Captured frames are processed <strong>locally</strong> on your device and are never uploaded, stored, or transmitted anywhere.</li>
     <li>The product cannot read page DOM, form data, or clipboard content, and never persists any frames.</li>
+  </ul>
+
+  <h2>Whole-page mirroring &amp; offscreen (Chrome extension only)</h2>
+  <p>The <strong>Whole page</strong> feature mirrors the entire active tab into Chrome's native Picture-in-Picture window. To deliver the live pixels, the extension uses an <code>offscreen</code> document — a hidden, extension-private page that Chrome requires for consuming tab-capture streams.</p>
+  <ul>
+    <li>The offscreen document is created <strong>only when you click “Whole page”</strong> and stays alive only while the floating window is open.</li>
+    <li>It receives the live pixels of your active tab and draws them directly into the Picture-in-Picture window — the frames never leave your device.</li>
+    <li>Nothing is stored, logged, or transmitted. Closing the floating window immediately stops the stream and the offscreen document.</li>
   </ul>
 
   <h2>Tab titles &amp; URLs (Chrome extension only)</h2>
