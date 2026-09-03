@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Magic Mirror 更新</title>
-    <item>
-      <title>Magic Mirror 0.0.3</title>
-      <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
-      <sparkle:version>0.0.3.279</sparkle:version>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.3.zip" sparkle:edSignature="QpwqEjpwZ7jLCMFwLETvUfd+Ay5jsQx1Mx+vPqGbes/+dqH2M6hc0cQEb1Iwz7t/cmzkhlLEUCa9vU9D/WvxDg==" length="4789306" type="application/octet-stream"/>
-      <description><![CDATA[<h3>Magic Mirror 0.0.3</h3><ul><li>菜单窗口列表按桌面分组：当前桌面与其余桌面分开显示，其他桌面的窗口也能直接镜像</li><li>画廊容器升级为自由画布：镜像卡片可随意拖动摆放，按内容宽高比自适应大小</li><li>容器模式即时生效：在设置中切换「独立窗口 / 按 App 分组 / 统一容器」时，已有镜像立即按新模式重新组织，无需重新创建</li><li>画面提示更准确：镜像内容正常更新时不再误报「被遮挡」</li><li>多屏更清晰：镜像窗口在副屏上按对应显示器的缩放比捕获</li><li>性能与功耗优化：内部状态重构、遮挡检测合并查询，运行更流畅、更省电</li><li>稳定性：新增大量自动化测试，防止功能回归</li></ul>]]></description>
-    </item>
-  </channel>
-</rss>
+      <?xml version="1.0" encoding="utf-8"?>
+      <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <channel>
+          <title>Magic Mirror 更新</title>
+          <item>
+            <title>Magic Mirror 0.0.4</title>
+            <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
+            <sparkle:version>0.0.4.330</sparkle:version>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.4.zip" sparkle:edSignature="CNelyaC2zXtjqMfV5AyVLuG4f48KvdcSjF9RS642OJMs2YxL11/nWRGKPTTwgKwQ/3YeTBO2BrsH5Sxoy9HbAg==" length="4990004" type="application/octet-stream"/>
+            <description><![CDATA[<h3>Magic Mirror 0.0.4</h3><ul><li>录制更顺手：支持暂停 / 继续，暂停期间不计入时长；录制面板实时显示已录时长</li><li>多屏分屏预设：把全部镜像一键平铺到所有显示器（也可排列到当前屏幕）</li><li>镜像窗口交互更直观：鼠标悬停浮现控制条（关闭 / 置顶到菜单栏 / 移动到屏幕），首次开启「点击穿透」时会提示后续如何管理该镜像</li><li>统一画廊容器支持拖动对齐：靠近其他卡片时自动吸附并显示对齐引导线</li><li>菜单栏置顶缩略图：悬停预览淡入淡出、不闪烁，并有描边提示可点击</li><li>设置页更清爽：高频选项保留在首页，资源类高级项折叠收纳；「容器模式」归入镜像页</li><li>快捷键更省心：未设置全局快捷键时菜单里会提示；录制组合键时若与系统或常用工具（Spotlight、Rectangle 等）默认占用相同，设置页会给出冲突提醒</li><li>提示音（可选）：录制开始 / 结束、许可证激活成功时播放短提示音，默认关闭、跟随系统界面音效开关</li><li>激活更省事：复制激活码后打开「许可证」页会自动识别填入；支持 `magicmirror://activate/…` 链接一键激活</li><li>Chrome 浏览器插件授权：插件通过桌面 App（Native Messaging）自动获得授权，一份激活码覆盖 Mac + 浏览器插件（Single：1 台 Mac + 1 插件；Family：3+3）</li><li>许可证更安心：卸载前会提示先反激活、避免白白占用激活名额；若旧设备已卸载且忘记反激活，可联系客服协助释放名额</li><li>测试版更新：设置 → 关于 可开启「接收测试版更新」，尝鲜用户能收到测试频道的新版本（关闭即只收正式版）</li><li>辅助功能：VoiceOver 可完整朗读菜单列表、操作按钮与调节滑块</li><li>稳定性与多屏可靠性：外接显示器热插拔时镜像自动暂停 / 恢复；长时间运行与录制更省电流畅</li><li>更多自动化测试，防止功能回归</li></ul>]]></description>
+          </item>
+        </channel>
+      </rss>
 <!-- sparkle-signatures:
-edSignature: uHdF3g8H07unP4paPLx7/CwhF6oWIe/ItQSbNILNpP4yNK0lyBy94pR4D0pD57nhqzEShcI29Rp/1CKNvelaBA==
-length: 1600
+edSignature: bxYcYb4UHwj9VRlbPKRp9U7IiuGFnX5v4zMHNnH8V7hXb85GhTMvKqNnvPLTisfu9GZ7r073XQEfyFaPHoRqAA==
+length: 2971
 -->
