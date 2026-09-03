@@ -13,16 +13,16 @@
 <item>
   <title>Magic Mirror 0.0.5</title>
   <sparkle:shortVersionString>0.0.5</sparkle:shortVersionString>
-  <sparkle:version>0.0.5.345</sparkle:version>
+  <sparkle:version>0.0.5.348</sparkle:version>
       <sparkle:channel>beta</sparkle:channel>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-  <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.5.zip" sparkle:edSignature="0FPaoxomy1WixdrlsO+wbadRrpDc/eWSes8IgSiLoMxbrAxJGI2JGcww/j4tsos06dpZ4Q9uq+CbD/XiEoSVAw==" length="3068123" type="application/octet-stream"/>
+  <enclosure url="https://gamepunk.github.io/magic-mirror/downloads/MagicMirror-0.0.5.zip" sparkle:edSignature="I2aFutn8WZvzPssyGJ6AJMoruBlJ3mXJdQlyR3n3wVM/sNTLJvwJNxEn4CgWfgJKaRFIHqsYcDAQdQ404QUCCQ==" length="3068361" type="application/octet-stream"/>
   <description><![CDATA[<h3>Magic Mirror 0.0.5</h3><ul><li>在 Dock 中显示：设置 → 通用 可开启，让 App 图标出现在 Dock（默认仅菜单栏）</li><li>首次启动引导升级：欢迎页示意右上角菜单栏入口（高亮图标 + 脉动提示），新用户不再找不到入口</li><li>自动更新开关：设置 → 通用 可关闭 / 开启「自动检查更新」</li><li>仅 Apple Silicon：macOS 27 起系统不再支持 Intel，官方构建与分发改为 arm64</li></ul>]]></description>
 </item>
 
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 4mwE7SFSuU5xrIftYWdVagsnzEGqPdJ+yHrwPn8ajF+DbZqRvNho1QH97twjSEOECU93iM/N9qHTWHwEEkn3AQ==
+edSignature: GT49fTEAY63unU03XsEwHJvmGXlbNNhJd+3g/tQF7thoZJGi2cE3B8G4U4vhXfF9ZC7Z+Ja95Zy2kNhdHUmjAw==
 length: 3982
 -->
